@@ -157,7 +157,7 @@ Non-authoritative answer:
 
 ginebro.cat
         primary name server: ns1.filnet.es
-        responsible mail addr = mariaexposito.ginebor.cat
+        responsible mail addr = mariaexposito.ginebro.cat
         serial  = 2023102906
         refresh = 10800 (3 hours)
         retry   = 3600 (1 hour)
@@ -356,3 +356,148 @@ Seguint l’exemple, es pot informar al carter que quan porti una carta la deixi
 L’encarregat de mantenir tot aquest llistat per qui el vulgui consultar és el **servei de DNS** i és útil per resoldre les adreces públiques (**Internet**) com les internes (**xarxa privada**).
 
 ## ***Pas 4***: Configurar el nostre propi **servidor de ```DNS```**
+
+![Alt text](./images/image.png)
+
+
+![Alt text](./images/image-1.png)
+
+![Alt text](./images/image-2.png)
+
+![Alt text](./images/image-3.png)
+
+![Alt text](./images/image-4.png)
+
+![Alt text](./images/image-5.png)
+
+![Alt text](./images/image-6.png)
+
+![Alt text](./images/image-7.png)
+
+![Alt text](./images/image-8.png)
+
+![Alt text](./images/image-9.png)
+
+![Alt text](./images/image-10.png)
+
+![Alt text](./images/image-11.png)
+
+![Alt text](./images/image-12.png)
+
+![Alt text](./images/image-13.png)
+
+![Alt text](./images/image-14.png)
+
+![Alt text](./images/image-15.png)
+
+## Instal·lació del servei DNS
+
+![Alt text](./images/image-34.png)
+
+Podem veure que el servidor que acabem de crear conté 4 carpetes i 2 entrades.
+
+Les quatre carpetes son:
+* ***Forward lookup zone*** (**Zones de cerca directa**): Les més habituals, a partir del nom s’assigna una adreça IP. Per dir-ho d’alguna manera, útil pels humans.
+
+* ***Reverse lookup zone*** (**Zones de cerca inversa**): Molts cops oblidada, fa la resolució inversa, és a dir, a partir de l’adreça IP obté el nom FQDN. Per dir-ho d’alguna manera, útil per les màquines.
+
+* ***Trust Point*** (**Punts de confiança**): Permet establir la configuració del **DNSSEC** a fi d’autenticar l’origen de les dades DNS. És una extensió molt nova que s’està començant a desplegar ara.
+
+* ***Conditionals Forwarders*** (**Reenviadors condicionals**): Per especificar servidors de resolució DNS per a dominis concrets. Per exemple, si estic conectat per VPN a una altre empresa i vull resoldre les adreces internes d’aquesta, m’interessarà fer les peticions al seu servidor intern en comptes d’anar a Internet a buscar-ho on no ho trobar
+
+
+I les dues entrades son:
+
+* ***Root hints*** (***Traces d'arrel***): Com ja vàrem comentar a classe són els servidors **```root```**.
+
+![Alt text](./images/image-36.png)
+
+* ***Forwarders*** (***Reenviadors***): Son **servidors DNS** que el nostre servidor DNS pot consultar per resoldre consultes que no pot resoldre per sí mateix.
+
+![Alt text](./images/image-37.png)
+
+Ara ja podem procedir a fer la instal·lació d'una nova **zona de DNS**. 
+
+![Alt text](./images/image-17.png)
+
+![Alt text](./images/image-19.png)
+
+![Alt text](./images/image-20.png)
+
+![Alt text](./images/image-38.png)
+
+ginebro.cat
+
+![Alt text](./images/image-39.png)
+
+![Alt text](./images/image-27.png)
+
+![Alt text](./images/image-28.png)
+
+Ja hem creat la nova **zona directa** **```ginebro.cat```**
+
+Podem veure que ja hi ha dos registres creats automàticament:
+
+![Alt text](./images/image-26.png)
+
+El registre de tipus **``SOA``** (***```S```***```tart``` ***```O```***```f``` ***```A```***```uthority```) amb els valors:
+
+|Data|valor|
+|---|---|
+|Primary server|**```srvpardo```**|
+|Responsible person|Que per defecte apareix **```hostmaster```**<br>i cal que modifiquem pel nom del responsable<br>en el nostre cas per  **```joanpardo```**|
+
+![Alt text](./images/image-40.png)
+
+
+![Alt text](./images/image-42.png)
+
+I per últim, el registre **``NS``** (**```Name Server```**) que té com a valor el nom del servidor **```srv-pardo```**.
+
+![Alt text](./images/image-43.png)
+
+
+### Creació dels **registres de tipus** **```A```**
+
+Ara toca crear els **```hosts```** (o **registres de tipus** **```A```**) que relacionen un nom amb una **adreça IP**.
+
+|Nom|Adreça IP|
+|---|---|
+|**```mariaexposito```**|**```80.80.80.81```**|
+|**```marclurbe```**|**```80.80.80.81```**|
+|**```ivannieto```**|**```80.80.80.81```**|
+|**```salvadorquadrades```**|**```80.80.80.81```**|
+|**```vladibellavista```**|**```80.80.80.81```**|
+|**```joanpardo```**|**```80.80.80.81```**|
+
+
+**Pas 1.** A sobre de la icona de la **zona directa** (**Forward lookup zone**), pitja el botó dret del ratolí i
+ escull l'opció **```New Host (A or AAAA) ...```**
+
+![Alt text](./images/image-29.png)
+
+**Pas 2.** A la nova finestra **```New Host```** que s'ha obert, cal afegir la informació del registre:
+
+|Camp|Informació|
+|---|---|
+|Name|**```mariaexposito```**|
+|IP Address|**```80.80.80.81```**|
+
+## **NOTA** Confirma que l'opció de crear el registre PTR associat no està marcada, ja que encara no tenim la **zona inversa** creada.
+
+**Pas 3.** Pressiona el botó <kbd>Add <u>H</u>ost</kbd>
+
+![Alt text](./images/image-30.png)
+
+**Pas 4.** A la nova finestra **```DNS```** que s'ha obert, pressiona el botó <kbd>OK</kbd>, per acceptar la confirmació de que el registre s'ha creat correctament.
+
+![Alt text](./images/image-31.png)
+
+![Alt text](./images/image-32.png)
+
+
+**Pas 5.** Repetir els passos 1, 2, 3 i 4 per a tots els **registres de tipus ```A```**. 
+
+![Alt text](./images/image-33.png)
+
+
