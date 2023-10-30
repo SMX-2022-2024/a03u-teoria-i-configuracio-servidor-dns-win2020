@@ -324,11 +324,10 @@ Els **```HOSTS```** (**registres de tipus** **```A```**) que relacionen un nom a
 
 |Nom|Adreça IP|
 |---|---|
-|**```correu.ginebro.cat```**|**```80.80.80.81```**|
+|**```secretaria.ginebro.cat```**|**```80.80.80.81```**|
 |**```ed-primaria.ginebro.cat```**|**```80.80.80.81```**|
 |**```ed-ebc.ginebro.cat```**|**```45.45.45.46```**|
  
-
 #### Els **```SOBRENOMS```** o **àlies**
 
 Serien els **registres** **```CNAME```** que relacionen un **sobrenom** a un **nom**, podrien ser:
@@ -341,7 +340,7 @@ Serien els **registres** **```CNAME```** que relacionen un **sobrenom** a un **n
 |**```tutor-sxm1```**|**```salvadorquadrades.ginebro.cat```**|
 |**```tutor-sxm2```**|**```vladibellavista.ginebro.cat```**|
 |**```profe-sxa```**|**```joanpardo.ginebro.cat```**|
-|**```profe-sxa```**|**```ivannieto.ginebro.cat```**|
+|**```profe-sxa-2```**|**```ivannieto.ginebro.cat```**|
 
 #### Els **serveis especials**
 
@@ -351,14 +350,13 @@ Seguint l’exemple, es pot informar al carter que quan porti una carta la deixi
 
 |Domini|Nom|
 |---|---|
-|**```ginebro.cat```**|**```correu.ginebro.cat```**|
+|**```correu.ginebro.cat```**|**```secretaria.ginebro.cat```**|
 
 L’encarregat de mantenir tot aquest llistat per qui el vulgui consultar és el **servei de DNS** i és útil per resoldre les adreces públiques (**Internet**) com les internes (**xarxa privada**).
 
 ## ***Pas 4***: Configurar el nostre propi **servidor de ```DNS```**
 
 ![Alt text](./images/image.png)
-
 
 ![Alt text](./images/image-1.png)
 
@@ -390,7 +388,8 @@ L’encarregat de mantenir tot aquest llistat per qui el vulgui consultar és el
 
 ![Alt text](./images/image-15.png)
 
-## Instal·lació del servei DNS
+
+## ***Pas 5***: Instal·lació del servei DNS
 
 ![Alt text](./images/image-34.png)
 
@@ -456,6 +455,7 @@ I per últim, el registre **``NS``** (**```Name Server```**) que té com a valor
 
 ![Alt text](./images/image-43.png)
 
+## ***Pas 6***: Configuració del servei DNS
 
 ### Creació dels **registres de tipus** **```A```**
 
@@ -469,7 +469,9 @@ Ara toca crear els **```hosts```** (o **registres de tipus** **```A```**) que re
 |**```salvadorquadrades```**|**```80.80.80.81```**|
 |**```vladibellavista```**|**```80.80.80.81```**|
 |**```joanpardo```**|**```80.80.80.81```**|
-
+|**```correu```**|**```80.80.80.81```**|
+|**```ed-primaria```**|**```80.80.80.81```**|
+|**```ed-ebc```**|**```45.45.45.46```**|
 
 **Pas 1.** A sobre de la icona de la **zona directa** (**Forward lookup zone**), pitja el botó dret del ratolí i
  escull l'opció **```New Host (A or AAAA) ...```**
@@ -495,9 +497,63 @@ Ara toca crear els **```hosts```** (o **registres de tipus** **```A```**) que re
 
 ![Alt text](./images/image-32.png)
 
-
 **Pas 5.** Repetir els passos 1, 2, 3 i 4 per a tots els **registres de tipus ```A```**. 
+
+Tant les persones com els espais:
 
 ![Alt text](./images/image-33.png)
 
+### Creació dels **registres de tipus** **```CNAME```**
 
+Ara toca crear els **```SOBRENOMS```** (o **registres de tipus** **```CNAME```**) que relacionen un nom amb un altre nom.
+
+|Sobrenom|Nom|
+|---|---|
+|**```director-pedagogic```**|**```mariaexposito.ginebro.cat```**|
+|**```cap-estudis```**|**```marclurbe.ginebro.cat```**|
+|**```resp-cicles-informatica```**|**```ivannieto.ginebro.cat```**|
+|**```tutor-sxm1```**|**```salvadorquadrades.ginebro.cat```**|
+|**```tutor-sxm2```**|**```vladibellavista.ginebro.cat```**|
+|**```profe-sxa```**|**```joanpardo.ginebro.cat```**|
+|**```profe-sxa-2```**|**```ivannieto.ginebro.cat```**|
+
+
+**Pas 1.** A sobre de la icona de la **zona directa** (**Forward lookup zone**), pitja el botó dret del ratolí i
+ escull l'opció **```New Alias (CNAME) ...```**
+
+![image-44.png](./images/image-44.png)
+
+**Pas 2.** A la nova finestra **```New Host```** que s'ha obert, cal afegir la informació del registre:
+
+|Camp|Informació|
+|---|---|
+|Alias Name|**```director-pedagogic```**|
+|FQDN Target|**```mariaexposito.ginebro.cat```**|
+
+![image-45.png](./images/image-45.png)
+
+**Pas 3.** Pressiona el botó <kbd>Add <u>H</u>ost</kbd>
+
+![image-46.png](./images/image-46.png)
+
+
+**Pas 4.** Repetir els passos 1, 2 i 3 per a tots els **registres de tipus ```CNAME```**. 
+
+![image-47.png](./images/image-47.png)
+
+### Creació dels **registres de tipus** **```MX```**
+
+Ara toca crear els **serveis especials**, com és el cas del **servei de correu electrònic** (**```registre MX```**) que relaciona un domini amb el **```HOST```** on s’ha d’**entregar el correu**.
+
+|Sobrenom|Nom|
+|---|---|
+|**```correu.ginebro.cat```**|**```secretaria.ginebro.cat```**|
+
+**Pas 1.** A sobre de la icona de la **zona directa** (**Forward lookup zone**), pitja el botó dret del ratolí i
+ escull l'opció **```New Alias (CNAME) ...```**
+
+![image-48.png](./images/image-48.png)
+
+![image-49.png](./images/image-49.png)
+
+## I ja està! Ja tenim en nostre servidor de DNS instal·lat i configurat!!
