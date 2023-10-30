@@ -133,7 +133,7 @@ Per més informació [Classful addressing definition](https://en.wikipedia.org/w
 
 |Interfície de xarxa|Component|Estat|
 |---|---|---|
-|**HostOnly**|**```DHCP enabled```**|**```Si```**|
+|**HostOnly**|**```DHCP enabled```**|**```No```**|
 ||**```IPv4 Address```**|**```192.168.56.1```**|
 ||**```DNS Servers```**|**```8.8.8.8```**<br>**```8.8.4.4```**|
 
