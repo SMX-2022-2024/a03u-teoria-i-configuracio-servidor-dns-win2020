@@ -539,6 +539,30 @@ I per últim, el registre **``NS``** (**```Name Server```**) que té com a valor
 
 ![Alt text](./images/image-43.png)
 
+A continuació passarem a configurar el **servidor ```DNS```**.
+
+**Pas 1.** A sobre de la icona del servidor de **DNS**, pitja el botó dret del ratolí i
+ escull l'opció **```Properties```**
+
+![Alt text](./images/image-50.png)
+
+**Pas 2.** A la nova finestra **```NOM DEL SERVIDOR DNS```** que s'ha obert, cal anar a la pestanya **```Interfaces```**
+
+Veiem que està configurat perquè faci servir totes les interfícies.
+
+![Alt text](./images/image-51.png)
+
+Doncs cal desmarcar-les totes, llevat de la interfície que té l'adreça ip del nostre servidor. En el meu cas és la interfície que té l'adreça ip **```172.128.8.1```**.
+És a dir, la que hem configurat com a **interfície de xarxa** anomenada **```Xarxa interna```**.
+
+**Pas 3.** Pressiona el botó <kbd><u>A</u>pply</kbd>
+
+![Alt text](./images/image-52.png)
+
+I si tornem a veure les propietats del servidor, ja veiem que només està seleccionada la nostra **interfície de xarxa** anomenada **```Xarxa interna```**.
+
+![Alt text](./images/image-53.png)
+
 ## ***Pas 6***: Configuració del servei DNS
 
 ### Creació dels **registres de tipus** **```A```**
@@ -640,3 +664,122 @@ Ara toca crear els **serveis especials**, com és el cas del **servei de correu 
 ![image-49.png](./images/image-49.png)
 
 ## I ja està! Ja tenim en nostre servidor de DNS instal·lat i configurat!!
+
+## ***Pas 7***: Comprovació de la correcta configuració del servei DNS
+
+**Pas 1.** Desplegar de la icona de la **zona directa** (**Forward lookup zone**), i selecciona el **nom de la zona** que hem configurat, en el nostre cas **```ginebro.cat```**. 
+
+**Pas 2.** pitja a sobre amb el botó dret del ratolí i escull l'opció **```Properties```**
+
+![Alt text](image-54.png)
+
+**Pas 3.** A la nova finestra amb el **nom de la zona** , en el nostre cas **```ginebro.cat```**, cal anar a la pestanya **```General```**
+
+![Alt text](image-55.png)
+
+Veiem:
+
+* l'estat del servidor de DNS: **```Running```**
+
+* el tipus de servidor de DNS: **```Primary```**
+
+* el nom del fitxer de la zona: **```ginebro.cat.dns```**
+
+**Pas 4.** A la pestanya **```Start of Authority (SOA)```**
+
+![Alt text](image-56.png)
+
+Veiem:
+
+* el serial number: **```22```**
+
+* el servidor primari: **```srv-pardo.```**  (Fixeu-vos que té un punt final)
+
+* el nom de la persona responsable: **```joanpardo```**
+
+```
+Refresh interval      = 15 minutes
+Retry interval        = 10 minutes
+Expire after          = 1 day
+Minimum (default) TTL = 1 hour
+
+TTL for this record: 0:1:0:0 (DDDDD:HH:MM:SS)
+```
+**Pas 5.** A la pestanya **```Names servers```**
+
+![Alt text](image-57.png)
+
+Veiem:
+
+* el **```FQDN```** del nostre servidor: **```srv-pardo.```**  (Fixeu-vos que té un punt final)
+
+
+**Pas 6.** A la pestanya **```WINS```** i la pestanya **```WINS```** 
+
+![Alt text](image-58.png)
+
+![Alt text](image-59.png)
+
+**Pas 7.** I per ultim, però no menys important, una visió global de la zona: **```ginebro.cat```**
+
+![Alt text](image-60.png)
+
+
+
+
+![Alt text](image.png)
+
+![Alt text](image-1.png)
+
+![Alt text](image-2.png)
+
+![Alt text](image-3.png)
+
+![Alt text](image-4.png)
+
+![Alt text](image-5.png)
+
+![Alt text](image-6.png)
+
+
+![Alt text](image-7.png)
+
+![Alt text](image-8.png)
+
+![Alt text](image-11.png)
+
+
+80.80.80.81
+correu.ginebro.cat
+
+![Alt text](image-12.png)
+
+
+![Alt text](image-13.png)
+
+![Alt text](image-14.png)
+
+
+El nom del fitxer és: **```80.80.80.in-add.arpa.dns```**, i es troba ubicat a: **```c:\Windows\System32\dns```**
+
+Amb el seguent contingut:
+
+![Alt text](image-15.png)
+
+Doncs ara podeu afegir tants **registres ```PTR```** com **registres de tipus ```A```** que hem afegit.
+
+I un cop afegits tots **registres ```PTR```** quedarà de la següent manera:
+
+![Alt text](image-16.png)
+
+Tanquem i guardem el fitxer.
+
+A continuació, procedirem a actualitzar la informació que hem afegit manualment al fitxer.
+
+![Alt text](image-9.png)
+
+![Alt text](image-10.png)
+
+I ara ja hauran d'apareixer totes els registres
+
+![Alt text](image-17.png)
