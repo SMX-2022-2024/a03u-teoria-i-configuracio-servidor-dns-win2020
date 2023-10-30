@@ -14,9 +14,9 @@
 
 ### [***Pas 4***: Configurar el nostre propi **servidor de ```DNS```**](#pas-4-configurar-el-nostre-propi-servidor-de-dns-1)
 
-### [***Pas 5***: Instal·lació del servei DNS](#pas-5-installacic3b3-del-servei-dns-1)
+### [***Pas 5***: Instal·lació del servei DNS](#pas-5-installació-del-servei-dns-1)
 
-### [***Pas 6***: Configuració del servei DNS](#pas-6-configuracic3b3-del-servei-dns-1)
+### [***Pas 6***: Configuració del servei DNS](#pas-6-configuració-del-servei-dns-1)
 
 </details>
 
