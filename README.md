@@ -12,7 +12,7 @@
 
 ### [***Pas 4***: Configuració del servei DNS](#pas-4-configuraci%C3%B3-del-servei-dns-1)
 
-### [***Pas 5***: Comprovació de la correcta configuració del servei DNS](#pas-5-comprovacic%C3%B3-de-la-correcta-configuracic%C3%B3-del-servei-dns-1)
+### [***Pas 5***: Comprovació de la correcta configuració del servei DNS](#pas-5-comprovació-de-la-correcta-configuració-del-servei-dns)
 
 <hr>
 <br>
