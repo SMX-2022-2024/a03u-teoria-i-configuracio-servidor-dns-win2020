@@ -2,11 +2,9 @@
 
 <br>
 
-<details><summary>pitja per mostrar l'Índex</summary>
-
 ## Índex
 
-### [***Pas 1***: Posant-nos en situació](#pas-1-posant-nos-en-situaci%C3%B3-1)
+### [***Pas 1***: Posant-nos en situació](#pas-1-posant-nos-en-situacic3b3-1)
 
 ### [***Pas 2***: Configurar el nostre propi **servidor de ```DNS```**](#pas-2-configurar-el-nostre-propi-servidor-de-dns-1)
 
@@ -15,9 +13,6 @@
 ### [***Pas 4***: Configuració del servei DNS](#pas-4-configuraci%C3%B3-del-servei-dns-1)
 
 ### [***Pas 5***: Comprovació de la correcta configuració del servei DNS](#pas-5-comprovacic3b3-de-la-correcta-configuracic3b3-del-servei-dns-1)
-
-
-</details>
 
 <hr>
 <br>
@@ -358,6 +353,8 @@ Una altra manera de veure aquesta informació és amb pàgines web com [who.is](
 
 ## ***Pas 1***: Posant-nos en situació
 
+#### [Tornar a l'Ìndex](#índex)
+
 En aquesta ocasió se seguiran els passos de la web [jmsolanes.net/dns/](https://www.jmsolanes.net/dns/)
 
 Imaginem l'**Escola Ginebró SCCL**, composta per:
@@ -456,6 +453,8 @@ L’encarregat de mantenir tot aquest llistat per qui el vulgui consultar és el
 
 ## ***Pas 2***: Configurar el nostre propi **servidor de ```DNS```**
 
+#### [Tornar a l'Ìndex](#índex)
+
 ![Alt text](./images/image.png)
 
 ![Alt text](./images/image-1.png)
@@ -490,6 +489,8 @@ L’encarregat de mantenir tot aquest llistat per qui el vulgui consultar és el
 
 
 ## ***Pas 3***: Instal·lació del servei DNS
+
+#### [Tornar a l'Ìndex](#índex)
 
 ![Alt text](./images/image-34.png)
 
@@ -580,6 +581,8 @@ I si tornem a veure les propietats del servidor, ja veiem que només està selec
 ![Alt text](./images/image-53.png)
 
 ## ***Pas 4***: Configuració del servei DNS
+
+#### [Tornar a l'Ìndex](#índex)
 
 ### Creació dels **registres de tipus** **```A```**
 
@@ -682,6 +685,8 @@ Ara toca crear els **serveis especials**, com és el cas del **servei de correu 
 ## I ja està! Ja tenim en nostre servidor de DNS instal·lat i configurat!!
 
 ## ***Pas 5***: Comprovació de la correcta configuració del servei DNS
+
+#### [Tornar a l'Ìndex](#índex)
 
 **Pas 1.** Desplegar de la icona de la **zona directa** (**Forward lookup zone**), i selecciona el **nom de la zona** que hem configurat, en el nostre cas **```ginebro.cat```**. 
 
