@@ -6,28 +6,31 @@
 
 ## Índex
 
-### [***Pas 1***: Situació del **servidor** abans de començar](#pas-1-situació-del-servidor-abans-de-començar)
+### [***Pas 1***: Posant-nos en situació](#pas-1-posant-nos-en-situacic3b3-1)
 
-### [***Pas 2***: Fer consultes a un DNS](#pas-2-fer-consultes-a-un-dns-1)
+### [***Pas 2***: Configurar el nostre propi **servidor de ```DNS```**](#pas-4-configurar-el-nostre-propi-servidor-de-dns-1)
 
-### [***Pas 3***: Posant-nos en situació](#pas-3-posant-nos-en-situacic3b3-1)
+### [***Pas 3***: Instal·lació del servei DNS](#pas-5-installació-del-servei-dns-1)
 
-### [***Pas 4***: Configurar el nostre propi **servidor de ```DNS```**](#pas-4-configurar-el-nostre-propi-servidor-de-dns-1)
+### [***Pas 4***: Configuració del servei DNS](#pas-6-configuració-del-servei-dns-1)
 
-### [***Pas 5***: Instal·lació del servei DNS](#pas-5-installació-del-servei-dns-1)
+### [***Pas 5***: Comprovació de la correcta configuració del servei DNS](#pas-5-comprovacic3b3-de-la-correcta-configuracic3b3-del-servei-dns-1)
 
-### [***Pas 6***: Configuració del servei DNS](#pas-6-configuració-del-servei-dns-1)
 
 </details>
 
 <hr>
 <br>
 
-<details><summary>pitja per mostrar la Definició d'adreçament amb classe</summary>
 
-<br>
+<details><summary>pitja per mostrar punts que no són passos a fer a l'activitat</summary>
+
+<hr>
 
 ## Definició d'adreçament amb classe
+
+<details><summary>pitja per mostrar la Definició d'adreçament amb classe</summary>
+
 
 A continuació es pot veure l'adreçament de xarxa amb classe resumit.
 
@@ -98,7 +101,9 @@ Per més informació [Classful addressing definition](https://en.wikipedia.org/w
 
 <hr>
 
-## ***Pas 1***: Situació del **servidor** abans de començar
+## Situació del **servidor** abans de començar
+
+<details><summary>pitja per mostrar l'opció -> Situació del servidor abans de començar</summary>
 
 ### **1.** Dades del **Servidor** 
 
@@ -154,9 +159,13 @@ Per més informació [Classful addressing definition](https://en.wikipedia.org/w
 |**```0800270e32e4```**|**```172.128.8.105```**|**```localhost```**|
 
 ************************************
+</details>
 
+<hr>
 
-## ***Pas 2***: Fer consultes a un DNS
+## Fer consultes a un **Servidor DNS**
+
+<details><summary>pitja per mostrar l'opció -> Fer consultes a un servidor DNS</summary>
 
 Abans de seguir amb l'activitat cal estudiar una eina per poder conèixer com obtenir la resposta a **consultes DNS** que volem fer.
 
@@ -331,7 +340,7 @@ Per què ens pot ajudar aquesta eina?
 * Saber on està allotjat un domini concret.
 * etc.
 
-**6.** Consulta de **regitres ```DNS```** a [**who.is**](who.is)
+**6.** Consulta de **registres ```DNS```** a [**who.is**](who.is)
 
 Una altra manera de veure aquesta informació és amb pàgines web com [who.is](https://who.is), que retorna la informació de **TOTS** els **registres DNS** que hi ha a **Internet**.
 
@@ -340,7 +349,14 @@ Una altra manera de veure aquesta informació és amb pàgines web com [who.is](
 
 ![who-is-dns-ginebro-cat.png](./images/who-is-dns-ginebro-cat.png)
 
-## ***Pas 3***: Posant-nos en situació
+</details>
+
+
+</details>
+
+<hr>
+
+## ***Pas 1***: Posant-nos en situació
 
 En aquesta ocasió se seguiran els passos de la web [jmsolanes.net/dns/](https://www.jmsolanes.net/dns/)
 
@@ -438,7 +454,7 @@ Seguint l’exemple, es pot informar al carter que quan porti una carta la deixi
 
 L’encarregat de mantenir tot aquest llistat per qui el vulgui consultar és el **servei de DNS** i és útil per resoldre les adreces públiques (**Internet**) com les internes (**xarxa privada**).
 
-## ***Pas 4***: Configurar el nostre propi **servidor de ```DNS```**
+## ***Pas 2***: Configurar el nostre propi **servidor de ```DNS```**
 
 ![Alt text](./images/image.png)
 
@@ -473,7 +489,7 @@ L’encarregat de mantenir tot aquest llistat per qui el vulgui consultar és el
 ![Alt text](./images/image-15.png)
 
 
-## ***Pas 5***: Instal·lació del servei DNS
+## ***Pas 3***: Instal·lació del servei DNS
 
 ![Alt text](./images/image-34.png)
 
@@ -563,7 +579,7 @@ I si tornem a veure les propietats del servidor, ja veiem que només està selec
 
 ![Alt text](./images/image-53.png)
 
-## ***Pas 6***: Configuració del servei DNS
+## ***Pas 4***: Configuració del servei DNS
 
 ### Creació dels **registres de tipus** **```A```**
 
@@ -665,7 +681,7 @@ Ara toca crear els **serveis especials**, com és el cas del **servei de correu 
 
 ## I ja està! Ja tenim en nostre servidor de DNS instal·lat i configurat!!
 
-## ***Pas 7***: Comprovació de la correcta configuració del servei DNS
+## ***Pas 5***: Comprovació de la correcta configuració del servei DNS
 
 **Pas 1.** Desplegar de la icona de la **zona directa** (**Forward lookup zone**), i selecciona el **nom de la zona** que hem configurat, en el nostre cas **```ginebro.cat```**. 
 
