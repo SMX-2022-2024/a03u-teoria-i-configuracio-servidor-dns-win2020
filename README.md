@@ -4,15 +4,16 @@
 
 ## Índex
 
-### [***Pas 1***: Posant-nos en situació](#pas-1-posant-nos-en-situaci%C3%B3-1)
+### [***Pas 1***: Posant-nos en situació](#pas-1-posant-nos-en-situació)
 
 ### [***Pas 2***: Configurar el nostre propi **servidor de ```DNS```**](#pas-2-configurar-el-nostre-propi-servidor-de-dns-1)
 
 ### [***Pas 3***: Instal·lació del servei DNS](#pas-3-installaci%C3%B3-del-servei-dns-1)
 
-### [***Pas 4***: Configuració del servei DNS](#pas-4-configuraci%C3%B3-del-servei-dns-1)
+### [***Pas 4***: Configuració del servei DNS](#pas-4-configuracic3b3-del-servei-dns-1)
 
 ### [***Pas 5***: Comprovació de la correcta configuració del servei DNS](#pas-5-comprovació-de-la-correcta-configuració-del-servei-dns)
+
 
 <hr>
 <br>
@@ -684,7 +685,7 @@ Ara toca crear els **serveis especials**, com és el cas del **servei de correu 
 
 ## I ja està! Ja tenim en nostre servidor de DNS instal·lat i configurat!!
 
-## ***Pas 5***: Comprovació de la correcta configuració del servei DNS
+## ***Pas 5***: Comprovació de la correcta configuració del **servei ```DNS```**
 
 #### [Tornar a l'Ìndex](#índex)
 
