@@ -8,11 +8,11 @@
 
 ### [***Pas 2***: Configurar el nostre propi **servidor de ```DNS```**](#pas-2-configurar-el-nostre-propi-servidor-de-dns-1)
 
-### [***Pas 3***: Instal·lació del servei DNS](#pas-3-installaci%C3%B3-del-servei-dns-1)
+### [***Pas 3***: Instal·lació del servei DNS](#pas-3-installació-del-servei-dns-1)
 
-### [***Pas 4***: Configuració del servei DNS](#pas-4-configuracic3b3-del-servei-dns-1)
+### [***Pas 4***: Configuració del servei DNS](#pas-4-configuració-del-servei-dns-1)
 
-### [***Pas 5***: Comprovació de la correcta configuració del servei DNS](#pas-5-comprovació-de-la-correcta-configuració-del-servei-dns)
+### [***Pas 5***: Comprovació de la correcta configuració del servei DNS](#pas-5-comprovació-de-la-correcta-configuració-del-servei-dns-1)
 
 
 <hr>
