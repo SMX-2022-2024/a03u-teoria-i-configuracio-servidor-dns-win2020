@@ -671,11 +671,11 @@ Ara toca crear els **serveis especials**, com és el cas del **servei de correu 
 
 **Pas 2.** pitja a sobre amb el botó dret del ratolí i escull l'opció **```Properties```**
 
-![Alt text](image-54.png)
+![Alt text](./images/image-54.png)
 
 **Pas 3.** A la nova finestra amb el **nom de la zona** , en el nostre cas **```ginebro.cat```**, cal anar a la pestanya **```General```**
 
-![Alt text](image-55.png)
+![Alt text](./images/image-55.png)
 
 Veiem:
 
@@ -687,7 +687,7 @@ Veiem:
 
 **Pas 4.** A la pestanya **```Start of Authority (SOA)```**
 
-![Alt text](image-56.png)
+![Alt text](./images/image-56.png)
 
 Veiem:
 
@@ -707,7 +707,7 @@ TTL for this record: 0:1:0:0 (DDDDD:HH:MM:SS)
 ```
 **Pas 5.** A la pestanya **```Names servers```**
 
-![Alt text](image-57.png)
+![Alt text](./images/image-57.png)
 
 Veiem:
 
@@ -716,70 +716,70 @@ Veiem:
 
 **Pas 6.** A la pestanya **```WINS```** i la pestanya **```WINS```** 
 
-![Alt text](image-58.png)
+![Alt text](./images/image-58.png)
 
-![Alt text](image-59.png)
+![Alt text](./images/image-59.png)
 
 **Pas 7.** I per ultim, però no menys important, una visió global de la zona: **```ginebro.cat```**
 
-![Alt text](image-60.png)
+![Alt text](./images/image-60.png)
 
 
 
 
-![Alt text](image.png)
+![Alt text](./images/image-61.png)
 
-![Alt text](image-1.png)
+![Alt text](./images/image-62.png)
 
-![Alt text](image-2.png)
+![Alt text](./images/image-63.png)
 
-![Alt text](image-3.png)
+![Alt text](./images/image-64.png)
 
-![Alt text](image-4.png)
+![Alt text](./images/image-65.png)
 
-![Alt text](image-5.png)
+![Alt text](./images/image-66.png)
 
-![Alt text](image-6.png)
+![Alt text](./images/image-67.png)
 
 
-![Alt text](image-7.png)
+![Alt text](./images/image-68.png)
 
-![Alt text](image-8.png)
+![Alt text](./images/image-69.png)
 
-![Alt text](image-11.png)
+![Alt text](./images/image-72.png)
 
 
 80.80.80.81
 correu.ginebro.cat
 
-![Alt text](image-12.png)
+![Alt text](./images/image-73.png)
 
 
-![Alt text](image-13.png)
+![Alt text](./images/image-74.png)
 
-![Alt text](image-14.png)
+![Alt text](./images/image-75.png)
 
 
 El nom del fitxer és: **```80.80.80.in-add.arpa.dns```**, i es troba ubicat a: **```c:\Windows\System32\dns```**
 
 Amb el seguent contingut:
 
-![Alt text](image-15.png)
+![Alt text](./images/image-76.png)
 
 Doncs ara podeu afegir tants **registres ```PTR```** com **registres de tipus ```A```** que hem afegit.
 
 I un cop afegits tots **registres ```PTR```** quedarà de la següent manera:
 
-![Alt text](image-16.png)
+![Alt text](./images/image-77.png)
 
 Tanquem i guardem el fitxer.
 
 A continuació, procedirem a actualitzar la informació que hem afegit manualment al fitxer.
 
-![Alt text](image-9.png)
+![Alt text](./images/image-70.png)
 
-![Alt text](image-10.png)
+![Alt text](./images/image-71.png)
 
 I ara ja hauran d'apareixer totes els registres
 
-![Alt text](image-17.png)
+![Alt text](./images/image-78.png)
