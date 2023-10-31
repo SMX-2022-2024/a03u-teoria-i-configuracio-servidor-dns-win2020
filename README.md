@@ -4,7 +4,7 @@
 
 ## Índex
 
-### [***Pas 1***: Posant-nos en situació](#pas-1-posant-nos-en-situació)
+### [***Pas 1***: Posant-nos en situació](#pas-1-posant-nos-en-situació-1)
 
 ### [***Pas 2***: Configurar el nostre propi **servidor de ```DNS```**](#pas-2-configurar-el-nostre-propi-servidor-de-dns-1)
 
@@ -354,7 +354,7 @@ Una altra manera de veure aquesta informació és amb pàgines web com [who.is](
 
 ## ***Pas 1***: Posant-nos en situació
 
-#### [Tornar a l'Ìndex](#índex)
+#### [Tornar a l'*Ìndex*](#índex)
 
 En aquesta ocasió se seguiran els passos de la web [jmsolanes.net/dns/](https://www.jmsolanes.net/dns/)
 
