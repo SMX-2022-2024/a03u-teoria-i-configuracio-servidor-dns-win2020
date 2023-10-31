@@ -4,7 +4,7 @@
 
 ## Índex
 
-### [***Pas 1***: Posant-nos en situació](#pas-1-posant-nos-en-situacic3b3-1)
+### [***Pas 1***: Posant-nos en situació](#pas-1-posant-nos-en-situaci%C3%B3-1)
 
 ### [***Pas 2***: Configurar el nostre propi **servidor de ```DNS```**](#pas-2-configurar-el-nostre-propi-servidor-de-dns-1)
 
@@ -12,7 +12,7 @@
 
 ### [***Pas 4***: Configuració del servei DNS](#pas-4-configuraci%C3%B3-del-servei-dns-1)
 
-### [***Pas 5***: Comprovació de la correcta configuració del servei DNS](#pas-5-comprovacic3b3-de-la-correcta-configuracic3b3-del-servei-dns-1)
+### [***Pas 5***: Comprovació de la correcta configuració del servei DNS](#pas-5-comprovacic%C3%B3-de-la-correcta-configuracic%C3%B3-del-servei-dns-1)
 
 <hr>
 <br>
