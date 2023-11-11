@@ -1,4 +1,4 @@
-# Exemple d’un DNS - mp07-uf01-04-dns-win2020
+# Activitat 4 (**A04U**): Configuració d’un servidor **DNS** a **```Win 2020 Server```** - mp07-uf01-04-dns-win2020
 
 <br>
 
