@@ -1,4 +1,6 @@
-# Activitat 4 (**A04U**): Configuració d’un servidor **DNS** a **```Win 2020 Server```** - mp07-uf01-04-dns-win2020
+# Teoria i configuració d'un servidor DNS a Win 2020 Server
+
+> ## MP07 UF01 A03U - Activitat 3
 
 <br>
 
