@@ -1,6 +1,6 @@
-# Teoria i configuració d'un servidor DNS a Win 2020 Server
+# Configuració d'un servidor DNS a Win 2020 Server TEORIA
 
-> ## MP07 UF01 A03U - Activitat 3
+> ## MP07 UF01 A03U - Teoria 3
 
 <br>
 
