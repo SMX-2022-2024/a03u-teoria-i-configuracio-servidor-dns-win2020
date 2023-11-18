@@ -16,17 +16,16 @@
 
 ### [***Pas 5***: Comprovació de la correcta configuració del servei DNS](#pas-5-comprovació-de-la-correcta-configuració-del-servei-dns-1)
 
-
 <hr>
+
 <br>
 
-
-<details><summary>pitja per mostrar punts que no són passos a fer a l'activitat</summary>
-
-<hr>
-
-#### [Definició d'adreçament amb classe](https://github.com/SMX-2022-2024/.github/blob/main/profile/manuals/man-dns-03-definicio-d-adrecament-amb-classe.md)
-
+> ## Repositoris per ajudar a fer l'activitat
+>
+> ### [Definició d'adreçament amb classe](https://github.com/SMX-2022-2024/.github/blob/main/profile/manuals/man-dns-03-definicio-d-adrecament-amb-classe.md)
+> 
+> ### [Fer consultes a un **Servidor DNS**](https://github.com/SMX-2022-2024/.github/blob/main/profile/manuals/man-dns-04-consultes-a-un-servidor-dns.md)
+>
 
 <hr>
 
@@ -34,64 +33,62 @@
 
 <details><summary>pitja per mostrar l'opció -> Situació del servidor abans de començar</summary>
 
-### **1.** Dades del **Servidor** 
-
-|Component|Estat|
-|---|---|
-|Nom del servidor|**```srv-pardo```**|
-|Servidor DHCP|**instal·lat**|
-
-### **2.** Configuració de les tres **interfícies de xarxa**:
-
-#### **2.a** -> **1a  interfície de xarxa** la **```NAT```**:
-
-![estat-1a-int-xarxa.png](./images/estat-1a-int-xarxa.png)
-
-|Interfície de xarxa|Component|Estat|
-|---|---|---|
-|**NAT**|**```DHCP enabled```**|**```Yes```**|
-||**```IPv4 Address```**|**```10.0.2.15```**|
-||**```DNS Servers```**|**```10.0.2.3```**|
-
-#### **2.b** -> 2a **interfície de xarxa** la **```Xarxa interna```**:
-
-![estat-2a-i-3a-int-xarxa.png](./images/estat-2a-i-3a-int-xarxa.png)
-
-|Interfície de xarxa|Component|Estat|
-|---|---|---|
-|**XarxaInterna**|**```DHCP enabled```**|**```No```**|
-||**```IPv4 Address```**|**```172.128.8.1```**|
-||**```DNS Servers```**|**```8.8.8.8```**<br>**```8.8.4.4```**|
-
-#### **2.c** -> **3a interfície de xarxa** la **```HostOnly```**:
-
-|Interfície de xarxa|Component|Estat|
-|---|---|---|
-|**HostOnly**|**```DHCP enabled```**|**```No```**|
-||**```IPv4 Address```**|**```192.168.56.1```**|
-||**```DNS Servers```**|**```8.8.8.8```**<br>**```8.8.4.4```**|
-
-### **3** Configuració del **Servei de ```DHCP```** 
-
-![estat-server-abans.png](./images/estat-server-abans.png)
-
-|Component|Estat|
-|---|---|
-|**nom del servidor**|**```srv-pardo```**|
-|**adreça IP inicial**|**```172.128.8.100```**|
-|**adreça IP final**|**```172.128.8.200```**|
-
-#### **3.a** -> Reserves:
-
-|Adreça MAC|Adreça ip reservada|nom reservat|
-|---|---|---|
-|**```0800270e32e4```**|**```172.128.8.105```**|**```localhost```**|
-
-************************************
-</details>
-
-<hr>
-
+> <hr>
+>
+> ### **1.** Dades del **Servidor** 
+> 
+> |Component|Estat|
+> |---|---|
+> |Nom del servidor|**```srv-pardo```**|
+> |Servidor DHCP|**instal·lat**|
+> 
+> ### **2.** Configuració de les tres **interfícies de xarxa**:
+> 
+> #### **2.a** -> **1a  interfície de xarxa** la **```NAT```**:
+> 
+> ![estat-1a-int-xarxa.png](./images/estat-1a-int-xarxa.png)
+> 
+> |Interfície de xarxa|Component|Estat|
+> |---|---|---|
+> |**NAT**|**```DHCP enabled```**|**```Yes```**|
+> ||**```IPv4 Address```**|**```10.0.2.15```**|
+> ||**```DNS Servers```**|**```10.0.2.3```**|
+> 
+> #### **2.b** -> 2a **interfície de xarxa** la **```Xarxa interna```**:
+> 
+> ![estat-2a-i-3a-int-xarxa.png](./images/estat-2a-i-3a-int-xarxa.png)
+> 
+> |Interfície de xarxa|Component|Estat|
+> |---|---|---|
+> |**XarxaInterna**|**```DHCP enabled```**|**```No```**|
+> ||**```IPv4 Address```**|**```172.128.8.1```**|
+> ||**```DNS Servers```**|**```8.8.8.8```**<br>**```8.8.4.4```**|
+> 
+> #### **2.c** -> **3a interfície de xarxa** la **```HostOnly```**:
+> 
+> |Interfície de xarxa|Component|Estat|
+> |---|---|---|
+> |**HostOnly**|**```DHCP enabled```**|**```No```**|
+> ||**```IPv4 Address```**|**```192.168.56.1```**|
+> ||**```DNS Servers```**|**```8.8.8.8```**<br>**```8.8.4.4```**|
+> 
+> ### **3** Configuració del **Servei de ```DHCP```** 
+> 
+> ![estat-server-abans.png](./images/estat-server-abans.png)
+> 
+> |Component|Estat|
+> |---|---|
+> |**nom del servidor**|**```srv-pardo```**|
+> |**adreça IP inicial**|**```172.128.8.100```**|
+> |**adreça IP final**|**```172.128.8.200```**|
+> 
+> #### **3.a** -> Reserves:
+> 
+> |Adreça MAC|Adreça ip reservada|nom reservat|
+> |---|---|---|
+> |**```0800270e32e4```**|**```172.128.8.105```**|**```localhost```**|
+> <hr>
+> 
 
 </details>
 
