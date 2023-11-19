@@ -1,6 +1,12 @@
 # Configuració d'un servidor DNS a Win 2020 Server TEORIA
 
-> ## MP07 UF01 A03U - Teoria 3
+<td class="icon">
+    <div class="title">
+        <h3>
+            :information_source: MP07 UF01 <b>A03U - Activitat 3</b>
+        </h3>
+    </div>
+</td>
 
 <br>
 
