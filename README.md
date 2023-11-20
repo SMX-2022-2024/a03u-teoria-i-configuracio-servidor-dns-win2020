@@ -139,7 +139,7 @@ I també disposa d’una bústia per les cartes.
 
 Posats en situació, anem a analitzar com es podria resoldre amb un **servei de DNS**?
 
-**1.** **Dominis**
+### **1.** **Dominis**
 
 Primer cal identificar el **domini principal** i el **domini de la família**, el seu símil **```FQDN```** podria ser:
 
@@ -148,10 +148,11 @@ Primer cal identificar el **domini principal** i el **domini de la família**, e
 |Domini principal|**```.cat```**|En aquest cas és el **territorial**, però també hi ha<br>el **```.com```**, **```.es```**, **```.net```**, **```.org```**, etc.|
 |Domini de l'escola|**```ginebro```**|On s’identifica el grup, l'escola|
 
-**2.** **Registre DNS**
+### **2.** **Registre DNS**
 
 Després, s’han de donar d’alta tots els noms que intervenen (persones, portes, bústies, etc..) formant el **```FQDN```** (nom, domini de l'escola i domini principal separats per un punt); relacionant-los amb l’adreça IP (C/ Joaquim Costa, s/n de Benante - Llinars del Vallès; o bé, Edifici primaria i secundària - Llinars del Vallès - Barcelona).
 
+#### **2.1.** **Registres de tipus** **```A```**
 
 Els **```HOSTS```** (**registres de tipus** **```A```**) que relacionen un nom amb una **adreça IP**, podrien ser:
 
@@ -173,10 +174,10 @@ Els **```HOSTS```** (**registres de tipus** **```A```**) que relacionen un nom a
 |**```secretaria.ginebro.cat```**|**```80.80.80.81```**|
 |**```ed-primaria.ginebro.cat```**|**```80.80.80.81```**|
 |**```ed-ebc.ginebro.cat```**|**```45.45.45.46```**|
- 
-#### Els **```SOBRENOMS```** o **àlies**
 
-Serien els **registres** **```CNAME```** que relacionen un **sobrenom** a un **nom**, podrien ser:
+#### **2.2.** **Registres de tipus** **```CNAME```**
+
+Els **```SOBRENOMS```** o **àlies**, serien els **registres** **```CNAME```** que relacionen un **sobrenom** a un **nom**, podrien ser:
 
 |Sobrenom|Nom|
 |---|---|
@@ -188,9 +189,9 @@ Serien els **registres** **```CNAME```** que relacionen un **sobrenom** a un **n
 |**```profe-sxa```**|**```joanpardo.ginebro.cat```**|
 |**```profe-sxa-2```**|**```ivannieto.ginebro.cat```**|
 
-#### Els **serveis especials**
+#### **2.3.** **Registres de tipus** **```MX```**
 
-Alguns **serveis especials**, com el cas del **servei de correu electrònic** (**```registre MX```**) que relaciona un domini amb el **```HOST```** on s’ha d’**entregar el correu**.
+Els **serveis especials**, alguns **serveis especials**, com el cas del **servei de correu electrònic** (**```registre MX```**) que relaciona un domini amb el **```HOST```** on s’ha d’**entregar el correu**.
 
 Seguint l’exemple, es pot informar al carter que quan porti una carta la deixi **a la bústia**. Que no cal que busqui a la persona en concret, ells ja s’ocuparan de distribuir-la:
 
@@ -288,6 +289,8 @@ Ja hem creat la nova **zona directa** **```ginebro.cat```**
 Podem veure que ja hi ha dos registres creats automàticament:
 
 ![Alt text](./images/image-26.png)
+
+#### **2.4.** **Registres de tipus** **```SOA```**
 
 El registre de tipus **``SOA``** (***```S```***```tart``` ***```O```***```f``` ***```A```***```uthority```) amb els valors:
 
